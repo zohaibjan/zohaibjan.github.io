@@ -2,792 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Zohaib Jan - AI/ML Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zohaib Jan - Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Internal CSS -->
   <style>
-    :root {
-      --primary-color: #4f46e5;
-      --primary-light: #6366f1;
-      --secondary-color: #1e293b;
-      --text-color: #334155;
-      --light-text: #64748b;
-      --background: #f8fafc;
-      --card-bg: #ffffff;
-      --light-bg: #f1f5f9;
-      --border: #e2e8f0;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
-      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-      --transition: all 0.3s ease;
-      --gradient: linear-gradient(135deg, var(--primary-color), #818cf8);
-      --radius: 12px;
-      --container-width: 1400px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      line-height: 1.6;
-      color: var(--text-color);
-      background-color: var(--background);
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
     }
-
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    a:hover {
-      color: var(--primary-light);
-    }
-
-    .container {
-      max-width: var(--container-width);
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    header {
-      background: var(--gradient);
-      color: white;
-      padding: 6rem 0 4rem;
+    /* Hero Section */
+    .hero {
+      background: url('header-bg.jpg') no-repeat center center;
+      background-size: cover;
       position: relative;
-      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
-    header::before {
-      content: '';
+    .hero::before {
+      content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
     }
-
-    .header-content {
+    .hero-content {
       position: relative;
       z-index: 2;
       text-align: center;
+      color: #fff;
     }
-
-    .profile-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid rgba(255, 255, 255, 0.3);
-      margin-bottom: 1.5rem;
-      box-shadow: var(--shadow-md);
-    }
-
-    .header-content h1 {
+    .hero-content h1 {
       font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.025em;
-    }
-
-    .header-content p {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      font-weight: 300;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1.5rem 0;
-    }
-
-    .social-links a {
-      display: flex;
-      align-items: center;
-      padding: 0.5rem 1rem;
-      background-color: rgba(255, 255, 255, 0.15);
-      border-radius: var(--radius);
-      color: white;
-      transition: var(--transition);
-      backdrop-filter: blur(10px);
-    }
-
-    .social-links a:hover {
-      background-color: rgba(255, 255, 255, 0.25);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .social-links a svg {
-      margin-right: 0.5rem;
-    }
-
-    nav {
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-      margin-top: -2rem;
-      margin-bottom: 2rem;
-      position: sticky;
-      top: 1rem;
-      z-index: 10;
-      box-shadow: var(--shadow-lg);
-      max-width: calc(var(--container-width) - 4rem);
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .filter-buttons {
-      display: flex;
-      justify-content: space-around;
-      padding: 1rem;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .filter-button {
-      background-color: transparent;
-      border: none;
-      padding: 0.75rem 1.25rem;
-      border-radius: var(--radius);
-      cursor: pointer;
-      transition: var(--transition);
-      font-weight: 500;
-      color: var(--light-text);
-    }
-
-    .filter-button.active {
-      background-color: var(--primary-color);
-      color: white;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .filter-button:hover:not(.active) {
-      background-color: var(--light-bg);
-      color: var(--text-color);
-    }
-
-    section {
-      padding: 4rem 0;
-    }
-
-    .section-title-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 3rem;
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 2.25rem;
-      color: var(--secondary-color);
-      position: relative;
       font-weight: 700;
     }
-
-    section h2::after {
-      content: '';
-      display: block;
-      width: 80px;
-      height: 4px;
-      background: var(--gradient);
-      margin: 0.75rem auto 0;
-      border-radius: 2px;
-    }
-
-    .section-title-icon {
-      color: var(--primary-color);
-      margin-right: 1rem;
-    }
-
-    .about-content {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
-      padding: 0 1rem;
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-      padding: 2rem;
-      box-shadow: var(--shadow-md);
-    }
-
-    .about-content p {
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-    }
-
-    .about-content p:last-child {
-      margin-bottom: 0;
-    }
-
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      max-width: 1000px;
-      margin: 2rem auto 0;
-    }
-
-    .skill-tag {
-      background-color: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 0.75rem 1.25rem;
-      border-radius: 30px;
-      font-size: 1rem;
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .skill-tag:hover {
-      background: var(--gradient);
-      color: white;
-      border-color: transparent;
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 2rem;
-    }
-
-    .project-card {
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-      overflow: hidden;
-      transition: var(--transition);
-      box-shadow: var(--shadow-md);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-
-    .project-details {
-      padding: 1.75rem;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-details h3 {
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
-      color: var(--secondary-color);
-    }
-
-    .project-details p {
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
-
-    .project-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: auto;
-    }
-
-    .project-links a {
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      padding: 0.5rem 1rem;
-      background-color: var(--light-bg);
-      border-radius: var(--radius);
-      transition: var(--transition);
-    }
-
-    .project-links a:hover {
-      background: var(--gradient);
-      color: white;
-    }
-
-    .project-links a svg {
-      margin-right: 0.5rem;
-    }
-
-    .publication-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .publication-item {
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      transition: var(--transition);
-      box-shadow: var(--shadow-md);
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .publication-item:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .publication-item h3 {
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-      color: var(--secondary-color);
-    }
-
-    .publication-meta {
-      color: var(--light-text);
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-    }
-
-    .publication-meta svg {
-      margin-right: 0.5rem;
-    }
-
-    .publication-abstract {
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
-
-    .publication-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: auto;
-    }
-
-    .publication-links a {
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      padding: 0.5rem 1rem;
-      background-color: var(--light-bg);
-      border-radius: var(--radius);
-      transition: var(--transition);
-    }
-
-    .publication-links a:hover {
-      background: var(--gradient);
-      color: white;
-    }
-
-    .publication-links a svg {
-      margin-right: 0.5rem;
-    }
-
-    .experience-list {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .experience-item {
-      margin-bottom: 2.5rem;
-      padding: 2rem;
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-md);
-      transition: var(--transition);
-      position: relative;
-    }
-
-    .experience-item:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .experience-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .experience-item h3 {
-      margin-bottom: 0.75rem;
-      font-size: 1.4rem;
-      color: var(--secondary-color);
-    }
-
-    .experience-meta {
-      color: var(--light-text);
-      margin-bottom: 1.25rem;
-      font-size: 1rem;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-    }
-
-    .experience-meta svg {
-      margin-right: 0.5rem;
-      color: var(--primary-color);
-    }
-
-    .experience-list-items {
-      list-style-type: none;
-      margin-left: 1.5rem;
-    }
-
-    .experience-list-items li {
-      margin-bottom: 0.75rem;
-      position: relative;
-    }
-
-    .experience-list-items li:before {
-      content: "";
-      position: absolute;
-      left: -1.5rem;
-      top: 0.65rem;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: var(--primary-color);
-    }
-
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: var(--card-bg);
-      padding: 2rem;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-md);
-    }
-
-    .form-group {
+    .hero-content p {
+      font-size: 1.25rem;
       margin-bottom: 1.5rem;
     }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 0.75rem;
-      font-weight: 600;
-      color: var(--secondary-color);
+    /* Section Spacing */
+    section {
+      padding: 60px 0;
     }
-
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      font-family: inherit;
-      font-size: 1rem;
-      transition: var(--transition);
-      background-color: var(--light-bg);
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-    }
-
-    .form-group textarea {
-      min-height: 150px;
-      resize: vertical;
-    }
-
-    button {
-      background: var(--gradient);
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: var(--radius);
-      cursor: pointer;
-      font-size: 1rem;
-      transition: var(--transition);
-      font-weight: 600;
-      box-shadow: var(--shadow-sm);
-    }
-
-    button:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
+    /* Footer */
     footer {
-      background-color: var(--secondary-color);
-      color: white;
-      padding: 3rem 0;
-      text-align: center;
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      background: var(--gradient);
-      color: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      box-shadow: var(--shadow-md);
-      opacity: 0;
-      visibility: hidden;
-      transition: var(--transition);
-      z-index: 100;
-    }
-
-    .back-to-top.visible {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .back-to-top:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .theme-toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border: none;
-      color: white;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-md);
-      z-index: 100;
-    }
-
-    /* Dark mode styles */
-    body.dark-mode {
-      --text-color: #e2e8f0;
-      --light-text: #94a3b8;
-      --background: #0f172a;
-      --card-bg: #1e293b;
-      --light-bg: #334155;
-      --border: #475569;
-      --secondary-color: #f8fafc;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
-      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.3), 0 2px 4px -1px rgba(0,0,0,0.2);
-      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.3), 0 4px 6px -2px rgba(0,0,0,0.2);
-    }
-
-    body.dark-mode .theme-toggle {
-      background: rgba(0, 0, 0, 0.3);
-    }
-
-    .section {
-      opacity: 0;
-      display: none;
-      transition: opacity 0.5s ease;
-    }
-
-    .section.active {
-      opacity: 1;
-      display: block;
-      animation: fadeIn 0.5s ease forwards;
-    }
-
-    /* Certificate and Education Styles */
-    .education-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    .education-item {
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      margin-bottom: 2rem;
-      box-shadow: var(--shadow-md);
-      transition: var(--transition);
-    }
-    
-    .education-item:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .education-item h3 {
-      margin-bottom: 0.75rem;
-      font-size: 1.3rem;
-      color: var(--secondary-color);
-    }
-    
-    .education-meta {
-      color: var(--light-text);
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-    }
-    
-    .education-meta svg {
-      margin-right: 0.5rem;
-      color: var(--primary-color);
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .fadeIn {
-      animation: fadeIn 0.5s ease forwards;
-    }
-
-    /* Responsive design */
-    @media (max-width: 1024px) {
-      .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      }
-      
-      .publication-list {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      }
-    }
-
-    @media (max-width: 768px) {
-      .header-content h1 {
-        font-size: 2.25rem;
-      }
-      
-      .header-content p {
-        font-size: 1.25rem;
-      }
-      
-      .social-links {
-        flex-wrap: wrap;
-      }
-
-      nav {
-        margin-top: -1rem;
-        position: static;
-      }
-
-      .filter-buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .filter-button {
-        margin-bottom: 0.5rem;
-      }
-      
-      .publication-list {
-        grid-template-columns: 1fr;
-      }
-      
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .project-card img {
-        height: 200px;
-      }
-      
-      .experience-item {
-        padding: 1.5rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .profile-img {
-        width: 140px;
-        height: 140px;
-      }
-      
-      .social-links a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.85rem;
-      }
-      
-      .section {
-        padding: 2rem 0;
-      }
-      
-      .section-title-container {
-        margin-bottom: 1.5rem;
-      }
-      
-      section h2 {
-        font-size: 1.75rem;
-      }
-      
-      .filter-button {
-        font-size: 0.85rem;
-        padding: 0.5rem 0.75rem;
-      }
-      
-      .container {
-        padding: 0 1rem;
-      }
-      
-      .project-details h3,
-      .publication-item h3,
-      .experience-item h3 {
-        font-size: 1.2rem;
-      }
+      background: #343a40;
+      color: #fff;
+      padding: 20px 0;
     }
   </style>
 </head>
 <body>
-  <button class="theme-toggle" aria-label="Toggle dark mode">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-  </button>
-
-  <header id="home">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <div class="profile-container">
-        <img src="/api/placeholder/180/180" alt="Muhammad Zohaib Jan" class="profile-img">
-        <div class="header-content">
-          <h1>Muhammad Zohaib Jan, PhD</h1>
-          <p>AI/ML Specialist & Data Engineer</p>
+      <a class="navbar-brand" href="#">Zohaib Jan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hello, I'm Zohaib Jan</h1>
+      <p>A passionate developer and researcher.</p>
+      <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>
+          I am a software developer and researcher with a strong passion for building innovative solutions
+          and exploring new technologies. Connect with me on LinkedIn or check out my GitHub to see my projects.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Projects</h2>
+      </div>
+      <div class="row g-4">
+        <!-- GitHub Repository Card -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">GitHub Repository</h5>
+              <p class="card-text">
+                Explore my projects, code contributions, and collaborative work on GitHub.
+              </p>
+              <a href="https://github.com/zohaibjan" class="btn btn-outline-primary" target="_blank">Visit GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="social-links">
-          <a href="https://github.com/zohaibjan" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-            </svg>
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/zohaibjan" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r
+        <!-- Additional project cards can be added similarly -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8">
+        <h2>Contact & Social</h2>
+        <ul class="list-unstyled">
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/zohaibjan/" target="_blank">https://www.linkedin.com/in/zohaibjan/</a>
+          </li>
+          <li>
+            <strong>Google Scholar:</strong>
+            <a href="https://scholar.google.com/citations?user=_gj3lH3YUVoC&hl=en" target="_blank">
+              https://scholar.google.com/citations?user=_gj3lH3YUVoC&hl=en
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Zohaib Jan. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
