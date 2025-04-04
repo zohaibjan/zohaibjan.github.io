@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zohaib Jan - Portfolio</title>
+  <title>Dr. Muhammad Zohaib Jan - Portfolio</title>
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Internal CSS -->
@@ -47,7 +47,13 @@
     section {
       padding: 60px 0;
     }
-    /* Accordion styling */
+    /* About Section */
+    .about-img {
+      max-width: 100%;
+      border-radius: 50%;
+      border: 4px solid #ddd;
+    }
+    /* Accordion styling for Publications */
     pre {
       background: #f8f9fa;
       padding: 15px;
@@ -73,18 +79,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#publications">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -93,46 +93,125 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Hello, I'm Zohaib Jan</h1>
-      <p>A passionate developer and researcher.</p>
+      <h1>Hello, I'm Dr. Muhammad Zohaib Jan</h1>
+      <p>AI/ML Specialist | Data Engineer | Project Manager | Researcher | Educationist</p>
       <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
     </div>
   </section>
   
   <!-- About Section -->
   <section id="about" class="container">
-    <div class="row justify-content-center text-center">
+    <div class="row align-items-center">
+      <!-- Profile Image -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="profile.jpg" alt="Profile Picture" class="about-img">
+      </div>
+      <!-- About Text -->
       <div class="col-md-8">
         <h2>About Me</h2>
         <p>
-          I am a software developer and researcher with a strong passion for building innovative solutions
-          and exploring new technologies. Connect with me on LinkedIn or check out my GitHub to see my projects.
+          Results-driven Data Engineering and AI/ML leader with extensive experience in driving transformative projects 
+          across defense, finance, academia, and public sectors. Expertise in designing scalable data solutions, modernizing 
+          legacy systems, and delivering impactful AI-driven innovations. Proven track record in leveraging advanced 
+          technologies—including Snowflake, AWS, and cutting-edge machine learning frameworks—to enhance efficiency, streamline 
+          operations, and foster data-driven decision-making. Adept at leading cross-functional teams and managing stakeholders 
+          to achieve strategic organizational goals.
+        </p>
+        <p>
+          <strong>Email:</strong> zohaibjan@gmail.com | <strong>Phone:</strong> 0424 368 791 | <strong>Location:</strong> Brisbane, Australia
         </p>
       </div>
     </div>
   </section>
   
-  <!-- Projects Section -->
-  <section id="projects" class="bg-light">
+  <!-- Experience Section -->
+  <section id="experience" class="bg-light">
     <div class="container">
       <div class="text-center mb-5">
-        <h2>Projects</h2>
+        <h2>Experience</h2>
       </div>
-      <div class="row g-4">
-        <!-- GitHub Repository Card -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">GitHub Repository</h5>
-              <p class="card-text">
-                Explore my projects, code contributions, and collaborative work on GitHub.
-              </p>
-              <a href="https://github.com/zohaibjan" class="btn btn-outline-primary" target="_blank">Visit GitHub</a>
-            </div>
+      <!-- Experience List -->
+      <div class="list-group">
+        <div class="list-group-item">
+          <h5>Manager Data Engineering</h5>
+          <p class="mb-1"><em>Queensland Building and Construction Commission, Brisbane, Australia</em> | 2024 – Present</p>
+          <ul>
+            <li>Spearheading data integration workflows from multiple source systems to create a data warehouse in Snowflake.</li>
+            <li>Collaborating with cross-functional teams to align data-driven decision-making with organizational goals.</li>
+            <li>Designing and developing ETL pipelines in the AWS ecosystem using tools such as Glue, Lambdas, and AppFlow.</li>
+          </ul>
+        </div>
+        <div class="list-group-item">
+          <h5>Senior Engineering Data Scientist</h5>
+          <p class="mb-1"><em>Boeing Defense Australia, Brisbane, Australia</em> | Feb 2022 – Nov 2024</p>
+          <ul>
+            <li>Led the implementation of state-of-the-art AI methodologies including Generative AI and computer vision.</li>
+            <li>Spearheaded AI capability development through tools like LangChain and OLAMA.</li>
+            <li>Managed cross-functional teams, improving object detection accuracy using synthetic environments in Unreal Engine.</li>
+          </ul>
+        </div>
+        <div class="list-group-item">
+          <h5>Data Linking Engineer</h5>
+          <p class="mb-1"><em>University of South Australia, Adelaide</em> | 2020 – 2021</p>
+          <ul>
+            <li>Designed and deployed advanced AI models for predictive analytics and decision-making in defense manufacturing.</li>
+            <li>Created data visualization tools to enhance stakeholder project decisions.</li>
+          </ul>
+        </div>
+        <div class="list-group-item">
+          <h5>Research Assistant</h5>
+          <p class="mb-1"><em>Central Queensland University, Brisbane, Australia</em> | 2017 – 2020</p>
+          <ul>
+            <li>Developed a computer vision tool for automatic tagging of road distractions for the Queensland Government.</li>
+            <li>Contributed to AI policy and framework development in academic and public sector contexts.</li>
+            <li>Published several research papers and presented findings to industry leaders.</li>
+          </ul>
+        </div>
+        <div class="list-group-item">
+          <h5>Manager Custom Software Development</h5>
+          <p class="mb-1"><em>Habib Bank Limited, Karachi, Pakistan</em> | 2014 – 2017</p>
+          <ul>
+            <li>Led the integration of corporate and consumer services with existing banking systems using SOA-based services.</li>
+            <li>Conducted UATs and coordinated with senior leadership to secure product approvals.</li>
+          </ul>
+        </div>
+        <div class="list-group-item">
+          <h5>Software Developer/Trainer</h5>
+          <p class="mb-1"><em>SZABIST, Karachi, Pakistan</em> | 2010 – 2014</p>
+          <ul>
+            <li>Developed software solutions and conducted training sessions on modern programming and technology trends.</li>
+          </ul>
+        </div>
+        <div class="list-group-item">
+          <h5>Auditor (Assistant Team Lead)</h5>
+          <p class="mb-1"><em>RGIS Pty Ltd, London, UK</em> | 2006 – 2010</p>
+          <ul>
+            <li>Assisted in auditing processes and led small teams in field data collection and verification.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <div class="text-center mb-5">
+      <h2>Projects</h2>
+    </div>
+    <div class="row g-4">
+      <!-- GitHub Repository Card -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">GitHub Repository</h5>
+            <p class="card-text">
+              Explore my projects, code contributions, and collaborative work on GitHub.
+            </p>
+            <a href="https://github.com/zohaibjan" class="btn btn-outline-primary" target="_blank">Visit GitHub</a>
           </div>
         </div>
-        <!-- Additional project cards can be added similarly -->
       </div>
+      <!-- You can add more project cards here -->
     </div>
   </section>
   
@@ -142,7 +221,7 @@
       <h2>Publications</h2>
     </div>
     <div class="accordion" id="publicationsAccordion">
-      
+      <!-- (Each accordion item represents one publication; see the detailed list below.) -->
       <!-- Publication 1 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading0">
@@ -167,7 +246,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 2 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading1">
@@ -190,7 +268,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 3 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading2">
@@ -213,7 +290,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 4 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading3">
@@ -236,7 +312,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 5 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading4">
@@ -259,7 +334,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 6 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading5">
@@ -284,7 +358,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 7 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading6">
@@ -307,7 +380,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 8 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading7">
@@ -330,7 +402,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 9 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading8">
@@ -353,7 +424,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 10 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading9">
@@ -376,7 +446,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 11 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading10">
@@ -399,7 +468,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 12 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading11">
@@ -424,7 +492,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 13 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading12">
@@ -449,7 +516,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 14 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading13">
@@ -471,7 +537,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 15 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading14">
@@ -493,7 +558,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 16 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading15">
@@ -515,7 +579,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 17 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading16">
@@ -538,7 +601,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 18 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading17">
@@ -560,7 +622,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 19 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading18">
@@ -582,7 +643,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 20 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading19">
@@ -607,7 +667,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 21 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading20">
@@ -629,7 +688,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 22 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading21">
@@ -650,7 +708,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 23 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading22">
@@ -669,7 +726,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 24 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading23">
@@ -692,7 +748,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 25 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading24">
@@ -717,7 +772,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 26 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading25">
@@ -738,7 +792,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 27 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading26">
@@ -760,7 +813,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 28 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading27">
@@ -785,7 +837,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 29 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading28">
@@ -809,7 +860,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 30 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading29">
@@ -832,7 +882,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 31 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading30">
@@ -855,7 +904,6 @@
           </div>
         </div>
       </div>
-      
       <!-- Publication 32 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading31">
@@ -878,7 +926,6 @@
           </div>
         </div>
       </div>
-      
     </div>
   </section>
   
@@ -906,7 +953,7 @@
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
-      <p>&copy; 2025 Zohaib Jan. All rights reserved.</p>
+      <p>&copy; 2025 Dr. Muhammad Zohaib Jan. All rights reserved.</p>
     </div>
   </footer>
   
