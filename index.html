@@ -1,1023 +1,416 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-AU">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dr. Muhammad Zohaib Jan - Portfolio</title>
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Internal CSS -->
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      scroll-behavior: smooth;
-    }
-    /* Hero Section */
-    .hero {
-      background: url('header-bg.jpg') no-repeat center center;
-      background-size: cover;
-      position: relative;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      color: #fff;
-    }
-    .hero-content h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-    .hero-content p {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-    /* Section Spacing */
-    section {
-      padding: 60px 0;
-    }
-    /* About Section */
-    .about-img {
-      max-width: 100%;
-      border-radius: 50%;
-      border: 4px solid #ddd;
-    }
-    /* Accordion styling for Publications */
-    pre {
-      background: #f8f9fa;
-      padding: 15px;
-      border-radius: 4px;
-      overflow-x: auto;
-    }
-    /* Footer */
-    footer {
-      background: #343a40;
-      color: #fff;
-      padding: 20px 0;
-    }
-  </style>
+  <title>Dr. Muhammad Zohaib Jan | Enterprise AI &amp; Data Executive</title>
+  <meta name="description" content="Dr. Muhammad Zohaib Jan is an Enterprise AI and Data Executive connecting strategy, governance, architecture and technical delivery across complex organisations.">
+  <meta name="author" content="Dr. Muhammad Zohaib Jan">
+  <meta name="theme-color" content="#171612">
+  <link rel="canonical" href="https://zohaibjan.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zohaibjan.github.io/">
+  <meta property="og:title" content="Dr. Muhammad Zohaib Jan | Enterprise AI &amp; Data Executive">
+  <meta property="og:description" content="Bridging executive strategy with technical excellence.">
+  <meta property="og:image" content="https://zohaibjan.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. Muhammad Zohaib Jan | Enterprise AI &amp; Data Executive">
+  <meta name="twitter:description" content="Bridging executive strategy with technical excellence.">
+  <meta name="twitter:image" content="https://zohaibjan.github.io/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Muhammad Zohaib Jan",
+    "url": "https://zohaibjan.github.io/",
+    "image": "https://zohaibjan.github.io/profile.jpg",
+    "jobTitle": "Enterprise AI & Data Executive",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "CQUniversity Australia"
+    },
+    "knowsAbout": [
+      "Enterprise AI Strategy",
+      "Data Strategy",
+      "Enterprise Architecture",
+      "Responsible AI",
+      "Digital Transformation"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/zohaibjan/",
+      "https://scholar.google.com/citations?user=_gj3lH3YUVoC&hl=en",
+      "https://github.com/zohaibjan"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Zohaib Jan</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Dr. Muhammad Zohaib Jan — home">
+      <span class="brand-mark">ZJ</span>
+      <span class="brand-name">Zohaib Jan</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#impact">Impact</a>
+      <a href="#research">Research</a>
+      <a href="#speaking">Speaking</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">
+        <span aria-hidden="true">◐</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
     </div>
-  </nav>
-  
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Hello, I'm Dr. Muhammad Zohaib Jan</h1>
-      <p>AI/ML Specialist | Data Engineer | Project Manager | Researcher | Educationist</p>
-      <!-- Updated button to jump to About Me section -->
-      <a href="#about" class="btn btn-primary btn-lg">About Me</a>
-    </div>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about" class="container">
-    <div class="row align-items-center">
-      <!-- Profile Image -->
-      <div class="col-md-4 text-center mb-4 mb-md-0">
-        <img src="profile.jpg" alt="Profile Picture" class="about-img">
-      </div>
-      <!-- About Text -->
-      <div class="col-md-8">
-        <h2>About Me</h2>
-        <p>
-            I’m a dynamic analytics leader and AI/ML strategist with a proven track record of transforming complex data challenges into actionable business wins. My career spans designing and deploying scalable, cloud-based solutions that drive revenue growth and operational efficiency. I consistently deliver measurable results—for instance:
-              Cloud & Data Platforms: Engineered integrated analytics pipelines using Snowflake, AWS Glue, and Oracle Fusion Middleware, consolidating multi-source data to enable real-time strategic decisions.
-              Cost and Efficiency Gains: Led migration projects and digital transformation initiatives that reduced operating costs by up to 40% and delivered savings exceeding $250,000 through innovative video analytics and autonomous systems.
-              Advanced AI/ML Implementations: Spearheaded the development and deployment of real-time frameworks using common frameworks such as MLFlow, Ultralytics, DeepsStream, TensorFlow, OpenCV and Pytorch—enhancing model performance and operational insights in high-stakes environments like defense and construction.
-              Proven Leadership: With extensive experience managing cross-functional teams, I’ve successfully implemented robust ETL pipelines, scalable data warehouses, and real-time dashboards that translate complex, multi-channel data into clear business intelligence.
-              Whether I’m overseeing the design of a cutting-edge analytics dashboard or leading the development of AI-powered solutions, I believe in delivering proof of success—not just generic titles or buzzwords. I update my expertise continuously through new projects, certifications, and evolving tech innovations to ensure I bring the right mix of technical mastery and business acumen to every challenge.
-        </p>
-        <p>
-          <strong>Email:</strong> zohaibjan@gmail.com | <strong>Phone:</strong> 0424 368 791 | <strong>Location:</strong> Brisbane, Australia
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Experience Section -->
-  <section id="experience" class="bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2>Experience</h2>
-      </div>
-      <!-- Experience List -->
-      <div class="list-group">
-        <div class="list-group-item">
-          <h5>Manager Data Engineering</h5>
-          <p class="mb-1"><em>Queensland Building and Construction Commission, Brisbane, Australia</em> | 2024 – Present</p>
-          <ul>
-            <li>Spearheading data integration workflows from multiple source systems to create a data warehouse in Snowflake.</li>
-            <li>Collaborating with cross-functional teams to align data-driven decision-making with organizational goals.</li>
-            <li>Designing and developing ETL pipelines in the AWS ecosystem using tools such as Glue, Lambdas, and AppFlow.</li>
-          </ul>
-        </div>
-        <div class="list-group-item">
-          <h5>Senior Engineering Data Scientist</h5>
-          <p class="mb-1"><em>Boeing Defense Australia, Brisbane, Australia</em> | Feb 2022 – Nov 2024</p>
-          <ul>
-            <li>Led the implementation of state-of-the-art AI methodologies including Generative AI and computer vision.</li>
-            <li>Spearheaded AI capability development through tools like LangChain and OLAMA.</li>
-            <li>Managed cross-functional teams, improving object detection accuracy using synthetic environments in Unreal Engine.</li>
-          </ul>
-        </div>
-        <div class="list-group-item">
-          <h5>Data Linking Engineer</h5>
-          <p class="mb-1"><em>University of South Australia, Adelaide</em> | 2020 – 2021</p>
-          <ul>
-            <li>Designed and deployed advanced AI models for predictive analytics and decision-making in defense manufacturing.</li>
-            <li>Created data visualization tools to enhance stakeholder project decisions.</li>
-          </ul>
-        </div>
-        <div class="list-group-item">
-          <h5>Research Assistant</h5>
-          <p class="mb-1"><em>Central Queensland University, Brisbane, Australia</em> | 2017 – 2020</p>
-          <ul>
-            <li>Developed a computer vision tool for automatic tagging of road distractions for the Queensland Government.</li>
-            <li>Contributed to AI policy and framework development in academic and public sector contexts.</li>
-            <li>Published several research papers and presented findings to industry leaders.</li>
-          </ul>
-        </div>
-        <div class="list-group-item">
-          <h5>Manager Custom Software Development</h5>
-          <p class="mb-1"><em>Habib Bank Limited, Karachi, Pakistan</em> | 2014 – 2017</p>
-          <ul>
-            <li>Led the integration of corporate and consumer services with existing banking systems using SOA-based services.</li>
-            <li>Conducted UATs and coordinated with senior leadership to secure product approvals.</li>
-          </ul>
-        </div>
-        <div class="list-group-item">
-          <h5>Software Developer/Trainer</h5>
-          <p class="mb-1"><em>SZABIST, Karachi, Pakistan</em> | 2010 – 2014</p>
-          <ul>
-            <li>Developed software solutions and conducted training sessions on modern programming and technology trends.</li>
-          </ul>
-        </div>
-        <div class="list-group-item">
-          <h5>Auditor (Assistant Team Lead)</h5>
-          <p class="mb-1"><em>RGIS Pty Ltd, London, UK</em> | 2006 – 2010</p>
-          <ul>
-            <li>Assisted in auditing processes and led small teams in field data collection and verification.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Projects Section -->
-  <section id="projects" class="container">
-    <div class="text-center mb-5">
-      <h2>Projects</h2>
-      <p>Explore some of my key projects below. Click on each card to visit the respective GitHub repository.</p>
-    </div>
-    <div class="row g-4">
-      <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Ensemble Framework - TKDE</h5>
-            <p class="card-text">A Novel Method for Creating an Optimized Ensemble Classifier by Introducing Cluster Size Reduction and Diversity.</p>
-            <a href="https://github.com/zohaibjan/IEEE_TKDE" class="btn btn-outline-primary" target="_blank">View Repository</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Ensemble Framework - TKDD</h5>
-            <p class="card-text">Ensemble Classifier Optimization by Reducing Input Features and Base Classifiers.</p>
-            <a href="https://github.com/zohaibjan/ensemble_works_TKDD" class="btn btn-outline-primary" target="_blank">View Repository</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Ensemble Framework - GECCO</h5>
-            <p class="card-text">Ensemble Classifier Framework in Python .</p>
-            <a href="https://github.com/zohaibjan/Ensemble_PSO_Python_V1" class="btn btn-outline-primary" target="_blank">View Repository</a>
-          </div>
-        </div>
-      </div>
-      <!-- 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">OLAMA &amp; LangChain Prototype</h5>
-            <p class="card-text">Developed a prototype using OLAMA and LangChain for in-house scripting language training.</p>
-            <a href="https://github.com/zohaibjan/olama-langchain-prototype" class="btn btn-outline-primary" target="_blank">View Repository</a>
-          </div>
-        </div>
-      </div>
+  </header>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Advanced Document Search Tool</h5>
-            <p class="card-text">Leveraged NLP techniques to develop a document search tool for context-aware archived data retrieval.</p>
-            <a href="https://github.com/zohaibjan/advanced-document-search" class="btn btn-outline-primary" target="_blank">View Repository</a>
-          </div>
-        </div>
-      </div>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#about">About <span>01</span></a>
+      <a href="#experience">Experience <span>02</span></a>
+      <a href="#impact">Impact <span>03</span></a>
+      <a href="#research">Research <span>04</span></a>
+      <a href="#speaking">Speaking <span>05</span></a>
+      <a href="#contact">Contact <span>06</span></a>
+    </nav>
+  </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Autonomous Road Rating System</h5>
-            <p class="card-text">Created a road rating system by analyzing video feeds to tag roadside attributes for safety improvements.</p>
-            <a href="https://github.com/zohaibjan/autonomous-road-rating" class="btn btn-outline-primary" target="_blank">View Repository</a>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Enterprise AI &amp; Data Executive <span>Brisbane, Australia</span></p>
+        <h1 class="reveal">
+          Bridging executive strategy
+          <em>with technical excellence.</em>
+        </h1>
+        <p class="hero-intro reveal">I help organisations turn AI and data ambition into governed, practical transformation—connecting executive priorities with enterprise architecture, capable teams and technically sound delivery.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#experience">Explore my experience <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#research">View research <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-portrait reveal">
+        <div class="portrait-frame">
+          <img src="profile.jpg" alt="Dr. Muhammad Zohaib Jan" width="800" height="800" fetchpriority="high">
+          <div class="portrait-caption">
+            <span>Strategy</span><span>Governance</span><span>Delivery</span>
           </div>
         </div>
       </div>
+      <div class="hero-proof" aria-label="Career highlights">
+        <div class="proof-item reveal">
+          <strong>15+</strong>
+          <span>Years across complex, regulated sectors</span>
+        </div>
+        <div class="proof-item reveal">
+          <strong>5</strong>
+          <span>Industry environments, one enterprise lens</span>
+        </div>
+        <div class="proof-item reveal">
+          <strong>PhD</strong>
+          <span>Artificial intelligence and image processing</span>
+        </div>
+      </div>
+    </section>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Integration Middleware</h5>
-            <p class="card-text">Developed middleware for integrating corporate facilities with legacy banking systems using Oracle Fusion Middleware.</p>
-            <a href="https://github.com/zohaibjan/integration-middleware" class="btn btn-outline-primary" target="_blank">View Repository</a>
-          </div>
+    <section class="marquee" aria-label="Areas of expertise">
+      <div class="marquee-track">
+        <span>Enterprise AI Strategy</span><i></i>
+        <span>Data Platforms</span><i></i>
+        <span>Responsible AI</span><i></i>
+        <span>Enterprise Architecture</span><i></i>
+        <span>Transformation Leadership</span><i></i>
+        <span>Executive Advisory</span><i></i>
+        <span>Enterprise AI Strategy</span><i></i>
+        <span>Data Platforms</span><i></i>
+        <span>Responsible AI</span><i></i>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-label reveal"><span>01</span> Executive profile</div>
+      <div class="about-grid">
+        <h2 class="display-title reveal">An enterprise leader who retains <em>deep technical credibility.</em></h2>
+        <div class="about-copy">
+          <p class="lead reveal">Dr. Muhammad Zohaib Jan brings more than 15 years of international experience across consulting, financial services, government, defence, higher education and research.</p>
+          <p class="reveal">He works at the intersection of business strategy and technical execution—helping organisations adopt AI responsibly, modernise enterprise data capabilities and deliver complex transformation programmes.</p>
+          <p class="reveal">His leadership approach combines commercial awareness, governance and people development with the technical depth to challenge architecture decisions, guide practitioners and translate emerging technology into sustainable business outcomes.</p>
+          <a class="text-link reveal" href="#experience">Follow the career journey <span aria-hidden="true">→</span></a>
         </div>
       </div>
-    </div>
-    Project 4 -->
-  </section>
-  
-  <!-- Publications Section -->
-  <section id="publications" class="container">
-    <div class="text-center mb-5">
-      <h2>Publications</h2>
-    </div>
-    <div class="accordion" id="publicationsAccordion">
-      <!-- Publication 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading0">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub0" aria-expanded="false" aria-controls="pub0">
-            Faraz et al. (2012) - The Impact of Social Networking to Influence Marketing through Product Reviews
+      <div class="capability-grid">
+        <article class="capability reveal">
+          <span>01</span>
+          <h3>Set the direction</h3>
+          <p>AI and data strategy, transformation roadmaps, investment choices and executive advisory.</p>
+        </article>
+        <article class="capability reveal">
+          <span>02</span>
+          <h3>Govern with confidence</h3>
+          <p>Responsible AI, privacy, information governance, risk and high-assurance delivery.</p>
+        </article>
+        <article class="capability reveal">
+          <span>03</span>
+          <h3>Build the capability</h3>
+          <p>Multidisciplinary teams, technical recruitment, mentoring and delivery leadership.</p>
+        </article>
+        <article class="capability reveal">
+          <span>04</span>
+          <h3>Deliver the value</h3>
+          <p>Enterprise architecture, data platforms and practical AI with measurable outcomes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-label light reveal"><span>02</span> Leadership experience</div>
+      <div class="experience-heading">
+        <h2 class="display-title light reveal">From boardroom priorities to <em>delivery reality.</em></h2>
+        <p class="reveal">A career built across industries where trust, sound judgement and technical rigour matter.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item is-open reveal">
+          <button class="timeline-trigger" type="button" aria-expanded="true">
+            <span class="timeline-number">01</span>
+            <span class="timeline-role"><strong>Senior Manager / AI Architect</strong><small>EY, Australia · Current</small></span>
+            <span class="timeline-plus" aria-hidden="true"></span>
           </button>
-        </h2>
-        <div id="pub0" class="accordion-collapse collapse" aria-labelledby="heading0" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{faraz2012impact,
-  title={The Impact of Social Networking to Influence Marketing through Product Reviews},
-  author={Faraz, Farooq and Jan, Zohaib},
-  journal={Internation Journal of Information and Technology Research},
-  volume={2},
-  number={8},
-  pages={627--637},
-  year={2012},
-  publisher={JICT}
-}
-            </pre>
+          <div class="timeline-panel">
+            <div>
+              <p>Leads a multidisciplinary, distributed AI and Data pod providing technical assurance for a major financial-services transformation.</p>
+              <p>Advises across data assurance, information governance, privacy and enterprise architecture, while contributing to AI and Data proposals, solution approaches and implementation roadmaps.</p>
+            </div>
+            <ul>
+              <li>People leadership across onshore and offshore teams</li>
+              <li>NDA-safe financial-services data assurance</li>
+              <li>AI, data and architecture subject-matter advice</li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <!-- Publication 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub1" aria-expanded="false" aria-controls="pub1">
-            Pasta et al. (2013) - Tunable and growing network generation model with community structures
+        </article>
+        <article class="timeline-item reveal">
+          <button class="timeline-trigger" type="button" aria-expanded="false">
+            <span class="timeline-number">02</span>
+            <span class="timeline-role"><strong>Manager — Data Science &amp; Engineering</strong><small>QBCC · Government &amp; Regulation</small></span>
+            <span class="timeline-plus" aria-hidden="true"></span>
           </button>
-        </h2>
-        <div id="pub1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{pasta2013tunable,
-  title={Tunable and growing network generation model with community structures},
-  author={Pasta, Muhammad Qasim and Jan, Zohaib and Sallaberry, Arnaud and Zaidi, Faraz},
-  booktitle={2013 International Conference on Cloud and Green Computing},
-  pages={233--240},
-  year={2013},
-  organization={IEEE}
-}
-            </pre>
+          <div class="timeline-panel">
+            <div>
+              <p>Led enterprise data-platform, AI, analytics, architecture and governance work in a regulated environment, with responsibility for people, partners and capability building.</p>
+              <p>Managed strategic technology relationships and contributed to platform investment, licensing, architecture and vendor decisions.</p>
+            </div>
+            <ul>
+              <li>Enterprise data and AI capability leadership</li>
+              <li>External partner and vendor governance</li>
+              <li>Responsible AI and information governance</li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <!-- Publication 3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub2" aria-expanded="false" aria-controls="pub2">
-            Pasta et al. (2013) - Demographic and structural characteristics to rationalize link formation in online social networks
+        </article>
+        <article class="timeline-item reveal">
+          <button class="timeline-trigger" type="button" aria-expanded="false">
+            <span class="timeline-number">03</span>
+            <span class="timeline-role"><strong>Senior AI / Machine Learning Engineer</strong><small>Boeing Defence Australia</small></span>
+            <span class="timeline-plus" aria-hidden="true"></span>
           </button>
-        </h2>
-        <div id="pub2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{pasta2013demographic,
-  title={Demographic and structural characteristics to rationalize link formation in online social networks},
-  author={Pasta, Muhammad Qasim and Jan, Zohaib and Zaidi, Faraz and Rozenblat, Céline},
-  booktitle={2013 International Conference on Signal-Image Technology & Internet-Based Systems},
-  pages={577--584},
-  year={2013},
-  organization={IEEE}
-}
-            </pre>
+          <div class="timeline-panel">
+            <div>
+              <p>Provided technical leadership on strategically significant, high-assurance AI research and development across computer vision, edge AI and synthetic data.</p>
+              <p>Guided delivery, mentored engineers and worked across multidisciplinary research and engineering teams.</p>
+            </div>
+            <ul>
+              <li>High-assurance AI research and delivery</li>
+              <li>Computer vision, edge AI and synthetic data</li>
+              <li>Technical risk, mentoring and hiring support</li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <!-- Publication 4 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub3" aria-expanded="false" aria-controls="pub3">
-            Khan et al. (2013) - To Identify the Criminal tendency of a Person by analysis of their social media profiles (Facebook)
+        </article>
+        <article class="timeline-item reveal">
+          <button class="timeline-trigger" type="button" aria-expanded="false">
+            <span class="timeline-number">04</span>
+            <span class="timeline-role"><strong>Research, Banking &amp; Software Leadership</strong><small>Australia, Pakistan &amp; United Kingdom</small></span>
+            <span class="timeline-plus" aria-hidden="true"></span>
           </button>
-        </h2>
-        <div id="pub3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{khan2013identify,
-  title={To Identify the Criminal tendency of a Person by analysis of their social media profiles (Facebook)},
-  author={Khan, Sajjad and Jan, Zohaib},
-  journal={Journal of Independent Studies and Research Computing},
-  volume={11},
-  number={2},
-  year={2013}
-}
-            </pre>
+          <div class="timeline-panel">
+            <div>
+              <p>Earlier roles span higher education and applied research, banking technology, software engineering, project delivery and team leadership.</p>
+              <p>This cross-sector foundation continues to shape a pragmatic approach to enterprise technology—grounded in how people, operations and systems actually work.</p>
+            </div>
+            <ul>
+              <li>Higher education and applied AI research</li>
+              <li>Banking integration and software delivery</li>
+              <li>International and cross-cultural experience</li>
+            </ul>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section impact" id="impact">
+      <div class="section-label reveal"><span>03</span> Selected impact</div>
+      <div class="impact-intro">
+        <h2 class="display-title reveal">Evidence over <em>adjectives.</em></h2>
+        <p class="reveal">Selected, publicly shareable outcomes from government, defence and enterprise transformation work.</p>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-card impact-feature reveal">
+          <p class="card-kicker">Government · Inspection transformation</p>
+          <div class="impact-stat">
+            <strong>4 hrs</strong><span>to</span><strong>1 hr</strong>
+          </div>
+          <h3>A faster path from field inspection to decision-ready reporting.</h3>
+          <p>Directed an inspection and reporting solution that reduced processing time by approximately 75%, with estimated annual operational savings of A$540,000 across roughly 2,400 inspections.</p>
+          <span class="case-note">Sanitised case summary</span>
+        </article>
+        <article class="impact-card reveal">
+          <p class="card-kicker">Enterprise AI · Reusable capability</p>
+          <strong class="big-number">2–3</strong>
+          <span class="number-label">days per prototype cycle</span>
+          <h3>From isolated experiments to repeatable delivery.</h3>
+          <p>Helped establish reusable production AI capability that shortened prototype cycles while strengthening governance and consistency.</p>
+        </article>
+        <article class="impact-card reveal">
+          <p class="card-kicker">Regulation · Licence review</p>
+          <strong class="big-number">40%</strong>
+          <span class="number-label">fewer incomplete submissions</span>
+          <h3>Using language models to improve process quality.</h3>
+          <p>Led an LLM-enabled initiative that helped applicants identify missing information earlier in the review process.</p>
+        </article>
+        <article class="impact-card impact-dark reveal">
+          <p class="card-kicker">Financial services · Data assurance</p>
+          <h3>Assurance where privacy and trust are non-negotiable.</h3>
+          <p>Leads assurance across structured and unstructured information moving between enterprise environments, with emphasis on classification, privacy, redaction and appropriate information transfer.</p>
+          <span class="case-note">Strictly NDA-safe</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="section-label reveal"><span>04</span> Research &amp; publications</div>
+      <div class="research-heading">
+        <div>
+          <h2 class="display-title reveal">Research with an <em>applied edge.</em></h2>
+          <p class="reveal">Machine learning, computer vision, explainable AI and enterprise applications—published across recognised IEEE, ACM and international venues.</p>
+        </div>
+        <a class="button button-outline reveal" href="https://scholar.google.com/citations?user=_gj3lH3YUVoC&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="research-controls reveal">
+        <div class="filter-group" aria-label="Filter publications">
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="enterprise">Enterprise AI</button>
+          <button class="filter" type="button" data-filter="vision">Computer vision</button>
+          <button class="filter" type="button" data-filter="learning">Machine learning</button>
+        </div>
+        <label class="search-box">
+          <span class="sr-only">Search selected publications</span>
+          <input type="search" placeholder="Search selected research" data-publication-search>
+          <span aria-hidden="true">⌕</span>
+        </label>
+      </div>
+      <div class="publication-list" data-publication-list>
+        <article class="publication reveal" data-category="enterprise" data-search="artificial intelligence industry 4.0 systematic review applications challenges opportunities">
+          <span class="publication-year">2023</span>
+          <div>
+            <p>Systematic review · Enterprise AI</p>
+            <h3>Artificial intelligence for Industry 4.0: applications, challenges and opportunities</h3>
+          </div>
+          <span class="publication-index">01</span>
+        </article>
+        <article class="publication reveal" data-category="enterprise" data-search="integrating industry 4.0 technologies defence manufacturing challenges solutions opportunities">
+          <span class="publication-year">2024</span>
+          <div>
+            <p>Applied research · Defence manufacturing</p>
+            <h3>Integrating Industry 4.0 technologies in defence manufacturing</h3>
+          </div>
+          <span class="publication-index">02</span>
+        </article>
+        <article class="publication reveal" data-category="learning" data-search="novel method optimised ensemble classifier cluster size reduction diversity ieee">
+          <span class="publication-year">2020</span>
+          <div>
+            <p>IEEE Transactions · Ensemble learning</p>
+            <h3>A novel method for creating an optimised ensemble classifier</h3>
+          </div>
+          <span class="publication-index">03</span>
+        </article>
+        <article class="publication reveal" data-category="vision" data-search="convolutional neural network deep learning identifying road attributes computer vision">
+          <span class="publication-year">2018</span>
+          <div>
+            <p>Computer vision · Applied deep learning</p>
+            <h3>A convolutional neural network technique for identifying road attributes</h3>
+          </div>
+          <span class="publication-index">04</span>
+        </article>
+        <article class="publication reveal" data-category="vision" data-search="multimodal biometric authentication personalised healthcare services artificial intelligence">
+          <span class="publication-year">2022</span>
+          <div>
+            <p>Healthcare AI · Multimodal systems</p>
+            <h3>An intelligent multimodal biometric authentication model for personalised healthcare</h3>
+          </div>
+          <span class="publication-index">05</span>
+        </article>
+        <article class="publication reveal" data-category="learning" data-search="classifier ensemble learning discrete optimisation machine learning">
+          <span class="publication-year">2024</span>
+          <div>
+            <p>Optimisation · Ensemble learning</p>
+            <h3>Classifier ensemble learning using discrete optimisation</h3>
+          </div>
+          <span class="publication-index">06</span>
+        </article>
+        <p class="no-results" data-no-results hidden>No selected publications match that search.</p>
+      </div>
+    </section>
+
+    <section class="section speaking" id="speaking">
+      <div class="speaking-content">
+        <div class="section-label light reveal"><span>05</span> Speaking &amp; thought leadership</div>
+        <h2 class="display-title light reveal">Making complex technology <em>useful to decision-makers.</em></h2>
+        <p class="reveal">A regular university guest speaker, Zohaib shares practical perspectives on enterprise AI, leadership and the journey from research to responsible organisational value.</p>
+        <div class="topic-list reveal">
+          <span>AI strategy beyond the prototype</span>
+          <span>Leading technical teams at enterprise scale</span>
+          <span>Responsible AI in regulated environments</span>
+          <span>From research insight to operational value</span>
+        </div>
+        <a class="button button-light reveal" href="#contact">Discuss a speaking opportunity <span aria-hidden="true">↗</span></a>
+      </div>
+      <blockquote class="speaking-quote reveal">
+        <span class="quote-mark">“</span>
+        <p>Effective technology leadership means building capable teams, asking informed questions and maintaining a clear line of sight to business value.</p>
+        <cite>Leadership philosophy</cite>
+      </blockquote>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow reveal">Connect</p>
+      <h2 class="reveal">Let’s turn ambitious ideas into <em>governed, practical outcomes.</em></h2>
+      <div class="contact-bottom reveal">
+        <p>For executive opportunities, advisory conversations, research collaboration and speaking enquiries.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/zohaibjan/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=_gj3lH3YUVoC&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/zohaibjan" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <!-- Publication 5 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub4" aria-expanded="false" aria-controls="pub4">
-            Wafai et al. (2014) - Proposed Ontology for Requirements Reuse
-          </button>
-        </h2>
-        <div id="pub4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{wafai2014proposed,
-  title={Proposed Ontology for Requirements Reuse},
-  author={Wafai, Sugandh and Jan, Zohaib},
-  journal={Journal of Independent Studies and Research Computing},
-  volume={12},
-  number={2},
-  year={2014}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 6 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading5">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub5" aria-expanded="false" aria-controls="pub5">
-            Ibrahim et al. (2015) - Next generation social network architecture
-          </button>
-        </h2>
-        <div id="pub5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{ibrahim2015next,
-  title={Next generation social network architecture},
-  author={Ibrahim, Syed Muhammad Adeel and Jan, Zohaib},
-  journal={Journal of Information & Communication Technology},
-  volume={9},
-  number={2},
-  pages={23--41},
-  year={2015},
-  publisher={Institute of Business and Technology (IBT)}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 7 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading6">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub6" aria-expanded="false" aria-controls="pub6">
-            Jan et al. (2018) - Optimizing clustering to promote data diversity when generating an ensemble classifier
-          </button>
-        </h2>
-        <div id="pub6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{jan2018optimizing,
-  title={Optimizing clustering to promote data diversity when generating an ensemble classifier},
-  author={Jan, Zohaib and Verma, Brijesh and Fletcher, Sam},
-  booktitle={Proceedings of the Genetic and Evolutionary Computation Conference Companion},
-  pages={1402--1409},
-  year={2018},
-  organization={ACM}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 8 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading7">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub7" aria-expanded="false" aria-controls="pub7">
-            Fletcher et al. (2018) - The Optimized Selection of Base-Classifiers for Ensemble Classification using a Multi-Objective Genetic Algorithm
-          </button>
-        </h2>
-        <div id="pub7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{fletcher2018optimized,
-  title={The Optimized Selection of Base-Classifiers for Ensemble Classification using a Multi-Objective Genetic Algorithm},
-  author={Fletcher, Sam and Verma, Brijesh and Jan, Zohaib and Zhang, Mengjie},
-  booktitle={2018 International Joint Conference on Neural Networks (IJCNN)},
-  pages={1--8},
-  year={2018},
-  organization={IEEE}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 9 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading8">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub8" aria-expanded="false" aria-controls="pub8">
-            Jan et al. (2018) - A convolutional neural network based deep learning technique for identifying road attributes
-          </button>
-        </h2>
-        <div id="pub8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{jan2018convolutional,
-  title={A convolutional neural network based deep learning technique for identifying road attributes},
-  author={Jan, Zohaib and Verma, Brijesh and Affum, Joseph and Atabak, Sam and Moir, Lachlan},
-  booktitle={2018 International Conference on Image and Vision Computing New Zealand (IVCNZ)},
-  pages={1--6},
-  year={2018},
-  organization={IEEE}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 10 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading9">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub9" aria-expanded="false" aria-controls="pub9">
-            Haidar et al. (2019) - Evolving one-dimensional deep convolutional neural network: a swarm based approach
-          </button>
-        </h2>
-        <div id="pub9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{haidar2019evolving,
-  title={Evolving one-dimensional deep convolutional neural network: a swarm based approach},
-  author={Haidar, Ali and Jan, Zohaib Md and Verma, Brijesh},
-  booktitle={2019 IEEE congress on evolutionary computation (CEC)},
-  pages={1299--1305},
-  year={2019},
-  organization={IEEE}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 11 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading10">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub10" aria-expanded="false" aria-controls="pub10">
-            Jan et al. (2019) - Ensemble Classifier Optimization by Reducing Input Features and Base Classifiers
-          </button>
-        </h2>
-        <div id="pub10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{jan2019ensemble,
-  title={Ensemble Classifier Optimization by Reducing Input Features and Base Classifiers},
-  author={Jan, Zohaib and Verma, Brijesh},
-  booktitle={2019 IEEE Congress on Evolutionary Computation (CEC)},
-  pages={1580--1587},
-  year={2019},
-  organization={IEEE}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 12 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading11">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub11" aria-expanded="false" aria-controls="pub11">
-            Jan et al. (2019) - A Novel Diversity Measure and Classifier Selection Approach for Generating Ensemble Classifiers
-          </button>
-        </h2>
-        <div id="pub11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2019novel,
-  title={A Novel Diversity Measure and Classifier Selection Approach for Generating Ensemble Classifiers},
-  author={Jan, Zohaib and Verma, Brijesh},
-  journal={IEEE Access},
-  volume={7},
-  number={1},
-  pages={156360--156373},
-  year={2019},
-  publisher={IEEE}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 13 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading12">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub12" aria-expanded="false" aria-controls="pub12">
-            Jan et al. (2019) - Evolutionary Classifier and Cluster Selection Approach for Ensemble Classification
-          </button>
-        </h2>
-        <div id="pub12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2019evolutionary,
-  title={Evolutionary Classifier and Cluster Selection Approach for Ensemble Classification},
-  author={Jan, Zohaib and Verma, Brijesh},
-  journal={ACM Transactions on Knowledge Discovery in Data},
-  volume={1},
-  number={1},
-  pages={1--8},
-  year={2019},
-  publisher={ACM}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 14 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading13">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub13" aria-expanded="false" aria-controls="pub13">
-            Lee et al. (2019) - A Novel Neural Network based Method for Analysis of Pavement Deflection Data
-          </button>
-        </h2>
-        <div id="pub13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{lee2019novel,
-  title={A Novel Neural Network based Method for Analysis of Pavement Deflection Data},
-  author={Lee, Jeffrey and Jan, Zohaib and Verma, Brijesh},
-  booktitle={IEEE Symposium Series on Computational Intelligence (SSCI)},
-  pages={1--8},
-  year={2019}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 15 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading14">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub14" aria-expanded="false" aria-controls="pub14">
-            Jan et al. (2019) - Balanced Image Data Based Ensemble of Convolutional Neural Networks
-          </button>
-        </h2>
-        <div id="pub14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{jan2019balanced,
-  title={Balanced Image Data Based Ensemble of Convolutional Neural Networks},
-  author={Jan, Zohaib and Verma, Brijesh},
-  booktitle={IEEE Symposium Series on Computational Intelligence (SSCI)},
-  pages={2418--2424},
-  year={2019}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 16 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading15">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub15" aria-expanded="false" aria-controls="pub15">
-            Jan et al. (2019) - Ensemble Classifier Generation Using Class-Pure Cluster Balancing
-          </button>
-        </h2>
-        <div id="pub15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{jan2019ensemble,  % (Note: duplicate key; consider renaming if needed)
-  title={Ensemble Classifier Generation Using Class-Pure Cluster Balancing},
-  author={Jan, Zohaib and Verma, Brijesh},
-  booktitle={26th International Conference on Neural Information Processing (ICONIP)},
-  pages={1--8},
-  year={2019}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 17 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading16">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub16" aria-expanded="false" aria-controls="pub16">
-            Ali et al. (2017) - Extracting a Graph Model by Mapping Two Heterogeneous Graphs
-          </button>
-        </h2>
-        <div id="pub16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{ali2017extracting,
-  title={Extracting a Graph Model by Mapping Two Heterogeneous Graphs},
-  author={Ali, Asad Feroz and Jan, Zohaib},
-  journal={Journal of Independent Studies and Research Computing},
-  volume={15},
-  number={1},
-  year={2017}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 18 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading17">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub17" aria-expanded="false" aria-controls="pub17">
-            Qasim Pasta et al. (2013) - Tunable and Growing Network Generation Model with Community Structures (arXiv)
-          </button>
-        </h2>
-        <div id="pub17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{qasim2013tunable,
-  title={Tunable and Growing Network Generation Model with Community Structures},
-  author={Qasim Pasta, Mohammad and Jan, Zohaib and Sallaberry, Arnaud and Zaidi, Faraz},
-  journal={arXiv e-prints},
-  pages={arXiv--1310},
-  year={2013}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 19 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading18">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub18" aria-expanded="false" aria-controls="pub18">
-            Qasim Pasta et al. (2013) - Demographic and Structural Characteristics to Rationalize Link Formation in Online Social Networks (arXiv)
-          </button>
-        </h2>
-        <div id="pub18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{qasim2013demographic,
-  title={Demographic and Structural Characteristics to Rationalize Link Formation in Online Social Networks},
-  author={Qasim Pasta, Muhammad and Jan, Zohaib and Zaidi, Faraz and Rozenblat, Celine},
-  journal={arXiv e-prints},
-  pages={arXiv--1311},
-  year={2013}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 20 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading19">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub19" aria-expanded="false" aria-controls="pub19">
-            Jan et al. (2020) - Multicluster class-balanced ensemble
-          </button>
-        </h2>
-        <div id="pub19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2020multicluster,
-  title={Multicluster class-balanced ensemble},
-  author={Jan, Zohaib and Verma, Brijesh},
-  journal={IEEE Transactions on Neural Networks and Learning Systems},
-  volume={32},
-  number={3},
-  pages={1014--1025},
-  year={2020},
-  publisher={IEEE}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 21 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading20">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub20" aria-expanded="false" aria-controls="pub20">
-            Jan et al. (2020) - Multiple Strong and Balanced Clusters based Ensemble of Deep Learners
-          </button>
-        </h2>
-        <div id="pub20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2020multiple,
-  title={Multiple Strong and Balanced Clusters based Ensemble of Deep Learners},
-  author={Jan, Zohaib and Verma, Brijesh},
-  journal={Pattern Recognition},
-  year={2020},
-  publisher={Elsevier}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 22 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading21">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub21" aria-expanded="false" aria-controls="pub21">
-            Jan et al. (2020) - Optimal Clusters Generation for Maximizing Ensemble Classifier Performance
-          </button>
-        </h2>
-        <div id="pub21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{jan2020optimal,
-  title={Optimal Clusters Generation for Maximizing Ensemble Classifier Performance},
-  author={Jan, Zohaib and Verma, Brijesh},
-  booktitle={2020 International Joint Conference on Neural Networks},
-  year={2020}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 23 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading22">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub22" aria-expanded="false" aria-controls="pub22">
-            Haidar et al. - Evolving One-Dimensional Deep Convolutional Neural Network: An Evolutionary Approach
-          </button>
-        </h2>
-        <div id="pub22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{haidarevolving,
-  title={Evolving One-Dimensional Deep Convolutional Neural Network: An Evolutionary Approach},
-  author={Haidar, Ali and Jan, Zohaib Md and Verma, Brijesh}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 24 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading23">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub23" aria-expanded="false" aria-controls="pub23">
-            Jan et al. (2020) - A Novel Method for Creating an Optimized Ensemble Classifier By Introducing Cluster Size Reduction and Diversity
-          </button>
-        </h2>
-        <div id="pub23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2020novel,
-  title={A Novel Method for Creating an Optimized Ensemble Classifier By Introducing Cluster Size Reduction and Diversity},
-  author={Jan, Zohaib and Munoz, Juan and Ali, Asim},
-  journal={IEEE Transactions on Knowledge and Data Engineering},
-  pages={11},
-  year={2020},
-  publisher={IEEE}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 25 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading24">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub24" aria-expanded="false" aria-controls="pub24">
-            Jan et al. (2020) - Multiple elimination of base classifiers in ensemble learning using accuracy and diversity comparisons
-          </button>
-        </h2>
-        <div id="pub24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2020multiple,
-  title={Multiple elimination of base classifiers in ensemble learning using accuracy and diversity comparisons},
-  author={Jan, Zohaib Md and Verma, Brijesh},
-  journal={ACM Transactions on Intelligent Systems and Technology (TIST)},
-  volume={11},
-  number={6},
-  pages={1--17},
-  year={2020},
-  publisher={ACM New York, NY, USA}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 26 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading25">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub25" aria-expanded="false" aria-controls="pub25">
-            Jan (2020) - A novel framework for optimised ensemble classifiers [PhD Thesis]
-          </button>
-        </h2>
-        <div id="pub25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@phdthesis{jan2020novel,
-  title={A novel framework for optimised ensemble classifiers},
-  author={Jan, Muhammad Zohaib},
-  year={2020},
-  school={CQUniversity}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 27 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading26">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub26" aria-expanded="false" aria-controls="pub26">
-            Muñoz-Carpio et al. (2021) - Machine Learning for Learning Personalization to Enhance Student Academic Performance.
-          </button>
-        </h2>
-        <div id="pub26" class="accordion-collapse collapse" aria-labelledby="heading26" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{munoz2021machine,
-  title={Machine Learning for Learning Personalization to Enhance Student Academic Performance.},
-  author={Muñoz-Carpio, Juan Carlos and Jan, Zohaib and Saavedra, Angelo},
-  booktitle={LALA},
-  pages={88--99},
-  year={2021}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 28 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading27">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub27" aria-expanded="false" aria-controls="pub27">
-            Ahamed et al. (2022) - An intelligent multimodal biometric authentication model for personalised healthcare services
-          </button>
-        </h2>
-        <div id="pub27" class="accordion-collapse collapse" aria-labelledby="heading27" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{ahamed2022intelligent,
-  title={An intelligent multimodal biometric authentication model for personalised healthcare services},
-  author={Ahamed, Farhad and Farid, Farnaz and Suleiman, Basem and Jan, Zohaib and Wahsheh, Luay A and Shahrestani, Seyed},
-  journal={Future Internet},
-  volume={14},
-  number={8},
-  pages={222},
-  year={2022},
-  publisher={MDPI}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 29 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading28">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub28" aria-expanded="false" aria-controls="pub28">
-            Jan et al. (2023) - Artificial intelligence for industry 4.0: Systematic review of applications, challenges, and opportunities
-          </button>
-        </h2>
-        <div id="pub28" class="accordion-collapse collapse" aria-labelledby="heading28" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2023artificial,
-  title={Artificial intelligence for industry 4.0: Systematic review of applications, challenges, and opportunities},
-  author={Jan, Zohaib and Ahamed, Farhad and Mayer, Wolfgang and Patel, Niki and Grossmann, Georg and Stumptner, Markus and Kuusk, Ana},
-  journal={Expert Systems with Applications},
-  volume={216},
-  pages={119456},
-  year={2023},
-  publisher={Pergamon}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 30 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading29">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub29" aria-expanded="false" aria-controls="pub29">
-            Jan et al. (2023) - How to promote the effective implementation of China’s Renewable Portfolio Standards considering non-neutral technology
-          </button>
-        </h2>
-        <div id="pub29" class="accordion-collapse collapse" aria-labelledby="heading29" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{jan2023promote,
-  title={How to promote the effective implementation of China’s Renewable Portfolio Standards considering non-neutral technology},
-  author={Jan, Zohaib and Ahamed, F and Mayer, W and Patel, N and Grossmann, G and Stumptner, M and Kuusk, A},
-  journal={Expect Systems With Application s},
-  volume={216},
-  pages={119456},
-  year={2023}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 31 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading30">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub30" aria-expanded="false" aria-controls="pub30">
-            Uzair and Jan (2024) - Classifier Ensemble Learning Using Discrete Optimization
-          </button>
-        </h2>
-        <div id="pub30" class="accordion-collapse collapse" aria-labelledby="heading30" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@inproceedings{uzair2024classifier,
-  title={Classifier Ensemble Learning Using Discrete Optimization},
-  author={Uzair, Muhammad and Jan, Zohaib},
-  booktitle={International Conference on Artificial Intelligence and Soft Computing},
-  pages={351--361},
-  year={2024},
-  organization={Springer Nature Switzerland Cham}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-      <!-- Publication 32 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading31">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub31" aria-expanded="false" aria-controls="pub31">
-            Ullah et al. (2024) - Integrating industry 4.0 technologies in defense manufacturing: Challenges, solutions, and potential opportunities
-          </button>
-        </h2>
-        <div id="pub31" class="accordion-collapse collapse" aria-labelledby="heading31" data-bs-parent="#publicationsAccordion">
-          <div class="accordion-body">
-            <pre>
-@article{ullah2024integrating,
-  title={Integrating industry 4.0 technologies in defense manufacturing: Challenges, solutions, and potential opportunities},
-  author={Ullah, Habib and Uzair, Muhammad and Jan, Zohaib and Ullah, Mohib},
-  journal={Array},
-  pages={100358},
-  year={2024},
-  publisher={Elsevier}
-}
-            </pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Contact Section -->
-  <section id="contact" class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-md-8">
-        <h2>Contact & Social</h2>
-        <ul class="list-unstyled">
-          <li>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/zohaibjan/" target="_blank">https://www.linkedin.com/in/zohaibjan/</a>
-          </li>
-          <li>
-            <strong>Google Scholar:</strong>
-            <a href="https://scholar.google.com/citations?user=_gj3lH3YUVoC&hl=en" target="_blank">
-              https://scholar.google.com/citations?user=_gj3lH3YUVoC&hl=en
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p>&copy; 2025 Dr. Muhammad Zohaib Jan. All rights reserved.</p>
-    </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">Dr. Muhammad Zohaib Jan</div>
+    <p>Enterprise AI &amp; Data Executive · Brisbane, Australia</p>
+    <p>© <span data-year></span> Zohaib Jan</p>
   </footer>
-  
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
