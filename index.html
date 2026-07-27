@@ -411,6 +411,48 @@
     <p>© <span data-year></span> Zohaib Jan</p>
   </footer>
 
+  <button class="chat-launcher" type="button" data-chat-launcher aria-expanded="false" aria-controls="chat-assistant">
+    <span class="chat-launcher-mark" aria-hidden="true">ZJ</span>
+    <span>Ask Dr. Zohaib</span>
+    <span class="chat-launcher-status" aria-hidden="true"></span>
+  </button>
+
+  <aside class="chat-assistant" id="chat-assistant" data-chat-assistant aria-labelledby="chat-title" hidden>
+    <header class="chat-header">
+      <div>
+        <span class="chat-kicker">Public knowledge assistant</span>
+        <h2 id="chat-title">Ask Dr. Zohaib</h2>
+      </div>
+      <button class="chat-close" type="button" data-chat-close aria-label="Close Ask Dr. Zohaib">×</button>
+    </header>
+    <div class="chat-trust-note">
+      <span aria-hidden="true">●</span>
+      Answers from verified public information only. Private and NDA-protected details are excluded.
+    </div>
+    <div class="chat-messages" data-chat-messages role="log" aria-live="polite" aria-relevant="additions">
+      <article class="chat-message is-assistant">
+        <span class="chat-avatar" aria-hidden="true">ZJ</span>
+        <div>
+          <p>Hello. I can help you explore Zohaib’s leadership experience, research, speaking topics and areas of expertise.</p>
+        </div>
+      </article>
+    </div>
+    <div class="chat-suggestions" data-chat-suggestions aria-label="Suggested questions">
+      <button type="button">What makes Zohaib different as a technology leader?</button>
+      <button type="button">Tell me about his AI and data experience</button>
+      <button type="button">What are his research areas?</button>
+      <button type="button">How can I contact him?</button>
+    </div>
+    <form class="chat-form" data-chat-form>
+      <label class="sr-only" for="chat-question">Ask a question about Dr. Zohaib Jan</label>
+      <input id="chat-question" data-chat-input type="text" maxlength="260" autocomplete="off" placeholder="Ask about experience, research or speaking…" required>
+      <button type="submit" aria-label="Send question">
+        <span aria-hidden="true">↑</span>
+      </button>
+    </form>
+    <p class="chat-footnote">This assistant may summarise information. Please use the contact links for formal enquiries.</p>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>
