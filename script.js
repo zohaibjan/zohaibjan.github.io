@@ -159,7 +159,7 @@ const chatKnowledge = [
   },
   {
     id: "boeing",
-    keywords: ["boeing", "defence", "defense", "edge", "synthetic", "computer", "vision", "research", "engineer", "engineering"],
+    keywords: ["boeing", "defence", "defense", "edge", "synthetic", "computer", "vision", "engineer", "engineering"],
     answer: "At Boeing Defence Australia, Zohaib provided technical leadership on high-assurance AI research and development involving computer vision, edge AI and synthetic data. He guided delivery, supported technical risk and hiring, and mentored graduate and intermediate engineers across multidisciplinary teams.",
     links: [{ label: "Career journey", href: "#experience" }]
   },
@@ -171,7 +171,7 @@ const chatKnowledge = [
   },
   {
     id: "research",
-    keywords: ["research", "publication", "publications", "paper", "papers", "phd", "scholar", "academic", "ensemble", "explainable", "industry", "journal", "conference"],
+    keywords: ["research", "research areas", "area", "areas", "topic", "topics", "publication", "publications", "paper", "papers", "phd", "scholar", "academic", "ensemble", "explainable", "industry", "journal", "conference"],
     answer: "Zohaib holds a PhD in Artificial Intelligence and Image Processing and has authored or co-authored more than 30 peer-reviewed publications. His research spans ensemble learning, optimisation, deep learning, computer vision, explainable AI, Industry 4.0 and applied enterprise AI.",
     links: [
       { label: "Selected publications", href: "#research" },
