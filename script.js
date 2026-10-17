@@ -122,9 +122,28 @@ const chatSuggestions = document.querySelector("[data-chat-suggestions]");
 
 const chatKnowledge = [
   {
+    id: "edge-project",
+    keywords: ["jetson", "deepstream", "gstreamer", "yolo", "tensorrt", "zeromq"],
+    answer: "Jetson Edge Vision is a fresh public reference implementation: C/C++ GStreamer elements wrap DeepStream inference and publish object metadata over ZeroMQ to a browser console. nvinfer builds and caches an engine on first use. Portable decoder and bridge tests pass; NVIDIA SDK compilation, Jetson inference and network transport still need target-device validation. It is recreated portfolio code, not employer source.",
+    links: [{ label: "Jetson Edge Vision source", href: "https://github.com/zohaibjan/jetson-edge-vision", external: true }]
+  },
+  {
+    id: "fieldwise-project",
+    keywords: ["fieldwise", "rag", "retrieval", "citations"],
+    answer: "FieldWise is a fresh engineering-document RAG reference inspired by the public Beyond Human case study. It uses SQLite FTS5 lexical retrieval, versioned sources, extractive answers and abstention. Optional OpenAI-generated answers require a server-side key and model setting. Its synthetic evaluation is documented in the repository; it does not inherit the original product’s deployment metrics.",
+    links: [{ label: "FieldWise source", href: "https://github.com/zohaibjan/fieldwise-rag-assistant", external: true }]
+  },
+  {
+    id: "projects",
+    keywords: ["projects", "project", "portfolio", "github", "code", "repository", "repositories", "beyondhuman"],
+    answer: "Inspect the public projects section for Jetson Edge Vision, FieldWise RAG, a Snowflake AI application framework, local document redaction, PDF scanning and MATLAB ensemble-learning research. The two new reference implementations are clearly labelled with test coverage and remaining validation work. Beyond Human provides the broader product case studies.",
+    links: [{ label: "Public projects", href: "#projects" }, { label: "Beyond Human", href: "https://beyondhuman.dev/", external: true }]
+  },
+
+  {
     id: "overview",
     keywords: ["who", "about", "overview", "profile", "background", "bio", "biography", "zohaib", "jan"],
-    answer: "Dr. Muhammad Zohaib Jan is a PhD-qualified Enterprise AI and Data Executive with more than 15 years of experience across consulting, financial services, government, defence, higher education and research. He connects executive priorities with enterprise architecture, governance, capable teams and technically sound delivery.",
+    answer: "Dr. Muhammad Zohaib Jan is a PhD-qualified Senior Manager and AI Architect at EY Australia with more than 15 years of experience across consulting, financial services, government, defence, higher education and research. He connects executive priorities with enterprise architecture, governance, capable teams and technically sound delivery.",
     links: [{ label: "Executive profile", href: "#about" }]
   },
   {
@@ -135,7 +154,7 @@ const chatKnowledge = [
   },
   {
     id: "current",
-    keywords: ["current", "now", "ey", "ernst", "young", "consulting", "senior", "manager", "architect", "financial", "bank", "banking", "divestment"],
+    keywords: ["current", "now", "ey", "ernst", "young", "consulting", "senior", "manager", "architect", "financial", "bank", "banking"],
     answer: "Zohaib is currently a Senior Manager and AI Architect at EY Australia. He leads a distributed AI and Data pod supporting a major financial-services transformation, with responsibilities spanning data assurance, information governance, privacy, enterprise architecture and people leadership. Public descriptions are intentionally high-level to respect client confidentiality.",
     links: [{ label: "Experience", href: "#experience" }]
   },
@@ -165,8 +184,8 @@ const chatKnowledge = [
   },
   {
     id: "outcomes",
-    keywords: ["impact", "outcome", "result", "achievement", "saving", "value", "benefit", "prototype", "40", "540", "75"],
-    answer: "Publicly shareable outcomes include reducing an inspection and reporting process from about four hours to one, with estimated annual savings of A$540,000; helping reduce incomplete licence-review submissions by approximately 40%; and establishing reusable AI capability that shortened prototype cycles to roughly two to three days.",
+    keywords: ["impact", "outcome", "result", "achievement", "saving", "value", "benefit", "prototype", "540", "75"],
+    answer: "A publicly shareable inspection case reduced processing time from about four hours to one, with estimated annual savings of A$540,000. Other work includes earlier checks for missing application information and reusable AI delivery capability. The new public reference projects have their own validation notes and make no historical deployment claims.",
     links: [{ label: "See selected impact", href: "#impact" }]
   },
   {
@@ -222,7 +241,7 @@ const chatKnowledge = [
   }
 ];
 
-const privateQuestionPattern = /\b(client name|bank name|unisys|internal platform|dap\b|free text scanning|salary|compensation|home address|phone number|security clearance|classified|confidential|nda details?|private data|personal data)\b/i;
+const privateQuestionPattern = /\b(client name|bank name|internal system details?|credentials?|api keys?|passwords?|salary|compensation|home address|phone number|security clearance|classified|confidential|nda details?|private data|personal data)\b/i;
 const stopWords = new Set(["a", "an", "and", "are", "about", "can", "could", "do", "does", "for", "he", "his", "how", "i", "in", "is", "me", "of", "on", "the", "tell", "to", "what", "where", "who", "with", "you"]);
 
 const normaliseQuestion = (value) => value
@@ -344,3 +363,4 @@ chatSuggestions?.querySelectorAll("button").forEach((button) => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && chatAssistant && !chatAssistant.hidden) closeChat();
 });
+
