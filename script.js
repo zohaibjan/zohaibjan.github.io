@@ -136,7 +136,7 @@ const chatKnowledge = [
   {
     id: "projects",
     keywords: ["projects", "project", "portfolio", "github", "code", "repository", "repositories", "beyondhuman"],
-    answer: "Inspect the public projects section for Jetson Edge Vision, FieldWise RAG, a Snowflake AI application framework, local document redaction, PDF scanning and MATLAB ensemble-learning research. The application directory also links Document Evidence Review, Visual Quality Assistant, Snowflake Field Reports, Multimodal Report Studio, Modular AI Workbench, CSV PII Signal Scanner and the Beyond Human WordPress theme. Each repository documents its setup, validation and remaining limits.",
+    answer: "Inspect the public projects section for Jetson Edge Vision, FieldWise RAG, a Snowflake AI application framework, local document redaction, PDF scanning and MATLAB ensemble-learning research. The application directory also links Document Evidence Review, Visual Quality Assistant, Snowflake Field Reports, Multimodal Report Studio, Modular AI Workbench, CSV PII Signal Scanner and the Editorial WordPress Theme. Each repository documents its setup, validation and remaining limits.",
     links: [{ label: "Public projects", href: "#projects" }, { label: "More public applications", href: "#public-applications" }, { label: "Beyond Human", href: "https://beyondhuman.dev/", external: true }]
   },
 
