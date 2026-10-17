@@ -136,8 +136,8 @@ const chatKnowledge = [
   {
     id: "projects",
     keywords: ["projects", "project", "portfolio", "github", "code", "repository", "repositories", "beyondhuman"],
-    answer: "Inspect the public projects section for Jetson Edge Vision, FieldWise RAG, a Snowflake AI application framework, local document redaction, PDF scanning and MATLAB ensemble-learning research. The two new reference implementations are clearly labelled with test coverage and remaining validation work. Beyond Human provides the broader product case studies.",
-    links: [{ label: "Public projects", href: "#projects" }, { label: "Beyond Human", href: "https://beyondhuman.dev/", external: true }]
+    answer: "Inspect the public projects section for Jetson Edge Vision, FieldWise RAG, a Snowflake AI application framework, local document redaction, PDF scanning and MATLAB ensemble-learning research. The application directory also links Document Evidence Review, Visual Quality Assistant, Snowflake Field Reports, Multimodal Report Studio, Modular AI Workbench, CSV PII Signal Scanner and the Beyond Human WordPress theme. Each repository documents its setup, validation and remaining limits.",
+    links: [{ label: "Public projects", href: "#projects" }, { label: "More public applications", href: "#public-applications" }, { label: "Beyond Human", href: "https://beyondhuman.dev/", external: true }]
   },
 
   {
@@ -363,4 +363,5 @@ chatSuggestions?.querySelectorAll("button").forEach((button) => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && chatAssistant && !chatAssistant.hidden) closeChat();
 });
+
 

@@ -1849,4 +1849,17 @@ footer p {
 .project-card .project-stack { font: 600 .76rem/1.7 var(--sans); color: var(--accent); }
 .project-card .text-link { margin-top: auto; padding-top: 20px; }
 .project-directory { margin-top: 30px; }
+.project-applications { margin-top: 56px; scroll-margin-top: 110px; }
+.project-applications > h3 { font: 500 clamp(1.8rem, 3vw, 2.5rem)/1.2 var(--display); margin: 0 0 16px; }
+.project-applications > .project-context { margin-bottom: 24px; }
+.project-repo-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; padding: 0; margin: 0; list-style: none; }
+.project-repo-list li { border-top: 1px solid var(--line); min-width: 0; }
+.project-repo-list a { display: flex; flex-direction: column; gap: 9px; height: 100%; padding: 24px 8px; text-decoration: none; transition: background .2s ease; }
+.project-repo-list a:hover { background: var(--paper-bright); }
+.project-repo-list a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.project-repo-list strong { font: 600 1rem/1.5 var(--sans); color: var(--ink); }
+.project-repo-list strong span { color: var(--accent); }
+.project-repo-list a > span { color: var(--ink-soft); font-size: .9rem; line-height: 1.7; }
+@media (max-width: 720px) { .project-repo-list { grid-template-columns: 1fr; } }
 @media (max-width: 720px) { .project-grid { grid-template-columns: 1fr; } .project-card { padding: 25px; } }
+
