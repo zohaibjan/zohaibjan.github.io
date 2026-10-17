@@ -1864,3 +1864,6 @@ footer p {
 @media (max-width: 720px) { .project-repo-list { grid-template-columns: 1fr; } }
 @media (max-width: 720px) { .project-grid { grid-template-columns: 1fr; } .project-card { padding: 25px; } }
 
+
+/* Project illustrations */
+.project-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; margin: 0 0 24px; background: #eee7db; }
