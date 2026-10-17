@@ -1,6 +1,6 @@
 # Dr. Muhammad Zohaib Jan — Executive Leadership Portfolio
 
-Public website for Dr. Muhammad Zohaib Jan, Enterprise AI & Data Executive.
+Public website for Dr. Muhammad Zohaib Jan, Senior Manager / AI Architect at EY Australia. The page features public engineering projects, research and enterprise leadership experience.
 
 The site is a responsive, accessible static experience hosted through GitHub Pages.
 
@@ -20,3 +20,9 @@ From the repository root, run `python -m http.server 8000` and open `http://loca
 ## Editing
 
 Update professional claims in the page and the assistant's curated knowledge together. Test the mobile layout, navigation and keyboard interaction after editing. The assistant matches curated information locally; it is not an external LLM service or a source of private work history. GitHub Pages build/deployment is managed by the repository's Pages configuration.
+
+## Public project provenance
+
+Jetson Edge Vision and FieldWise RAG are newly recreated reference implementations. Project cards link their source, tests and validation limits. They contain no employer/client source or inherited deployment metrics. Broader product case studies link to https://beyondhuman.dev/.
+
+When editing `script.js` or `styles.css`, also change the asset version query in `index.html` so visitors receive refreshed assets. Keep the GitHub Pages build/deployment enabled; it publishes this site.
