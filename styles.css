@@ -1867,3 +1867,7 @@ footer p {
 
 /* Project illustrations */
 .project-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; margin: 0 0 24px; background: #eee7db; }
+
+
+.project-panel { overflow: hidden; }
+.project-repo-list .project-image { margin: 0 0 12px; flex: none; }
