@@ -305,7 +305,7 @@
         <h2 class="display-title reveal">Architecture you can <em>inspect.</em></h2>
         <p class="reveal">Source code, design decisions and validation notes across edge vision, document AI and data platforms.</p>
       </div>
-      <p class="project-context reveal">Jetson Edge Vision and FieldWise are fresh portfolio reference implementations recreated from high-level project ideas. They contain no employer or client source code, and do not reproduce historical deployment results. Explore the broader product work at <a href="https://beyondhuman.dev/" target="_blank" rel="noopener">Beyond Human ↗</a>.</p>
+      <p class="project-context reveal">Jetson Edge Vision, FieldWise and Vision Training Hub are fresh portfolio reference implementations recreated from high-level project ideas. They contain no employer or client source code, and do not reproduce historical deployment results. Explore the broader product work at <a href="https://beyondhuman.dev/" target="_blank" rel="noopener">Beyond Human ↗</a>.</p>
       <div class="project-grid">
         <article class="project-card reveal">
           <img class="project-image" src="assets/projects/jetson-edge-vision.png" alt="Concept illustration of an edge computing board, camera and vehicles with detection boxes" width="1024" height="572" loading="lazy" decoding="async">
@@ -354,6 +354,23 @@
           <p class="project-stack">MATLAB · Optimisation · Classification</p>
           <p>An entry point into the MATLAB research collection, with paper context, dependencies and reproducibility notes.</p>
           <a class="text-link" href="https://github.com/zohaibjan/ensemble_optimised_PSO_GA_MOEA" target="_blank" rel="noopener">Explore research code <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card reveal">
+          <svg class="project-image" width="1024" height="572" viewBox="0 0 720 402" role="img" aria-label="Vision Training Hub architecture: labelled datasets flow through a job queue to available GPUs and MLflow tracking" xmlns="http://www.w3.org/2000/svg">
+            <rect width="720" height="402" fill="#eee7db"/>
+            <g fill="#262a27" font-family="sans-serif"><text x="48" y="61" font-size="13" letter-spacing="3">VISION TRAINING HUB</text><text x="48" y="103" font-size="26">Train. Track. Compare.</text></g>
+            <g stroke="#a7765a" stroke-width="3" fill="none"><path d="M176 225H254M386 225H454M520 225V158M520 225V292M586 158H645V225M586 292H645V225"/></g>
+            <g fill="#fcfaf4" stroke="#bcb3a5"><rect x="45" y="183" width="132" height="84" rx="8"/><rect x="254" y="183" width="132" height="84" rx="8"/><rect x="454" y="116" width="132" height="84" rx="8"/><rect x="454" y="250" width="132" height="84" rx="8"/></g>
+            <g fill="#262a27" font-family="sans-serif" font-size="16" text-anchor="middle"><text x="111" y="220">Labelled data</text><text x="320" y="220">Job queue</text><text x="520" y="151">GPU 01</text><text x="520" y="285">GPU 02</text></g>
+            <g fill="#8d614a" font-family="sans-serif" font-size="11" text-anchor="middle"><text x="111" y="243">IMAGES + LABELS</text><text x="320" y="243">PERSISTENT FIFO</text><text x="520" y="175">ISOLATED TRAINING</text><text x="520" y="309">ISOLATED TRAINING</text></g>
+            <circle cx="645" cy="225" r="9" fill="#a7765a"/><text x="645" y="254" font-family="sans-serif" text-anchor="middle" font-size="12" fill="#262a27">MLflow</text>
+            <text x="48" y="374" font-family="sans-serif" font-size="12" fill="#6b665e">YOLOv8 · GPU scheduling · Experiment tracking</text>
+          </svg>
+          <p class="card-kicker">07 · New reference implementation</p>
+          <h3>Vision Training Hub</h3>
+          <p class="project-stack">Python · YOLOv8 · FastAPI · MLflow</p>
+          <p>A training portal with validated image datasets, a persistent job queue, available-GPU scheduling, background training and MLflow tracking. Includes a tested simulation mode; real GPU training validation is pending.</p>
+          <a class="text-link" href="https://github.com/zohaibjan/vision-training-hub" target="_blank" rel="noopener">Explore training orchestration <span aria-hidden="true">↗</span></a>
         </article>
       </div>
       <div class="project-applications" id="public-applications">
@@ -529,7 +546,7 @@
     <p class="chat-footnote">This assistant may summarise information. Please use the contact links for formal enquiries.</p>
   </aside>
 
-  <script src="script.js?v=20261017-editorial-theme"></script>
+  <script src="script.js?v=20261018-training-hub"></script>
 </body>
 </html>
 
