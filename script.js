@@ -130,20 +130,20 @@ const chatKnowledge = [
   {
     id: "fieldwise-project",
     keywords: ["fieldwise", "rag", "retrieval", "citations"],
-    answer: "FieldWise is a fresh engineering-document RAG reference inspired by the public Beyond Human case study. It uses SQLite FTS5 lexical retrieval, versioned sources, extractive answers and abstention. Optional OpenAI-generated answers require a server-side key and model setting. Its synthetic evaluation is documented in the repository; it does not inherit the original product’s deployment metrics.",
+    answer: "FieldWise is a fresh engineering-document RAG reference based on a high-level document-retrieval concept. It uses SQLite FTS5 lexical retrieval, versioned sources, extractive answers and abstention. Optional OpenAI-generated answers require a server-side key and model setting. Its synthetic evaluation is documented in the repository; it does not inherit the original product’s deployment metrics.",
     links: [{ label: "FieldWise source", href: "https://github.com/zohaibjan/fieldwise-rag-assistant", external: true }]
   },
   {
     id: "projects",
-    keywords: ["projects", "project", "portfolio", "github", "code", "repository", "repositories", "beyondhuman"],
-    answer: "Inspect the public projects section for Jetson Edge Vision, FieldWise RAG, Vision Training Hub for YOLOv8 training with GPU scheduling and MLflow, a Snowflake AI application framework, local document redaction, PDF scanning and MATLAB ensemble-learning research. The application directory also links Document Evidence Review, Visual Quality Assistant, Snowflake Field Reports, Multimodal Report Studio, Modular AI Workbench, CSV PII Signal Scanner and the Editorial WordPress Theme. Each repository documents its setup, validation and remaining limits.",
-    links: [{ label: "Public projects", href: "#projects" }, { label: "More public applications", href: "#public-applications" }, { label: "Beyond Human", href: "https://beyondhuman.dev/", external: true }]
+    keywords: ["projects", "project", "portfolio", "github", "code", "repository", "repositories"],
+    answer: "Inspect the public projects section for Jetson Edge Vision, FieldWise RAG, Vision Training Hub for YOLOv8 training with GPU scheduling and MLflow, a Snowflake AI application framework, local document redaction, PDF scanning and MATLAB ensemble-learning research. The application directory also links Document Evidence Review, Visual Quality Assistant, Field Notes Studio, Multimodal Report Studio, Modular AI Workbench, CSV PII Signal Scanner and the Editorial WordPress Theme. Each repository documents its setup, validation and remaining limits.",
+    links: [{ label: "Public projects", href: "#projects" }, { label: "More public applications", href: "#public-applications" }]
   },
 
   {
     id: "overview",
     keywords: ["who", "about", "overview", "profile", "background", "bio", "biography", "zohaib", "jan"],
-    answer: "Dr. Muhammad Zohaib Jan is a PhD-qualified Senior Manager and AI Architect at EY Australia with more than 15 years of experience across consulting, financial services, government, defence, higher education and research. He connects executive priorities with enterprise architecture, governance, capable teams and technically sound delivery.",
+    answer: "Dr. Muhammad Zohaib Jan is a PhD-qualified Senior Manager and AI Architect at EY Australia with more than 15 years of experience across consulting, financial services, enterprise technology, higher education and research. He connects executive priorities with enterprise architecture, governance, capable teams and technically sound delivery.",
     links: [{ label: "Executive profile", href: "#about" }]
   },
   {
@@ -168,24 +168,24 @@ const chatKnowledge = [
     ]
   },
   {
-    id: "qbcc",
-    keywords: ["qbcc", "government", "regulation", "regulatory", "inspection", "licence", "license", "savings", "responsible", "governance", "vendor", "hiring"],
-    answer: "At QBCC, Zohaib led enterprise data, AI, analytics, architecture and governance work in a regulated environment. He led internal staff and contractors, governed delivery partners, managed strategic relationships with Snowflake, Salesforce, Microsoft and AWS, and improved technical recruitment. A public inspection-transformation case reduced processing time from about four hours to one, with estimated annual operational savings of A$540,000.",
+    id: "data-leadership",
+    keywords: ["platforms", "governance", "vendor", "hiring", "leadership"],
+    answer: "Zohaib has led enterprise data, AI, analytics, architecture and governance work. His responsibilities have included multidisciplinary teams, delivery partners, platform strategy and technical recruitment.",
     links: [
       { label: "Leadership experience", href: "#experience" },
       { label: "Measured impact", href: "#impact" }
     ]
   },
   {
-    id: "boeing",
-    keywords: ["boeing", "defence", "defense", "edge", "synthetic", "computer", "vision", "engineer", "engineering"],
-    answer: "At Boeing Defence Australia, Zohaib provided technical leadership on high-assurance AI research and development involving computer vision, edge AI and synthetic data. He guided delivery, supported technical risk and hiring, and mentored graduate and intermediate engineers across multidisciplinary teams.",
+    id: "applied-ai",
+    keywords: ["edge", "synthetic", "computer", "vision", "engineer", "engineering"],
+    answer: "Zohaib has provided technical leadership across computer vision, edge AI and synthetic data, supported technical delivery, and mentored engineers across multidisciplinary teams.",
     links: [{ label: "Career journey", href: "#experience" }]
   },
   {
     id: "outcomes",
-    keywords: ["impact", "outcome", "result", "achievement", "saving", "value", "benefit", "prototype", "540", "75"],
-    answer: "A publicly shareable inspection case reduced processing time from about four hours to one, with estimated annual savings of A$540,000. Other work includes earlier checks for missing application information and reusable AI delivery capability. The new public reference projects have their own validation notes and make no historical deployment claims.",
+    keywords: ["impact", "outcome", "result", "achievement", "value", "benefit", "prototype", "reports", "evidence"],
+    answer: "The public reference applications demonstrate audio and photo reporting, grounded evidence review, reusable AI delivery patterns and model-training orchestration. Their repositories document their own tests and remaining validation limits.",
     links: [{ label: "See selected impact", href: "#impact" }]
   },
   {
@@ -208,14 +208,14 @@ const chatKnowledge = [
   },
   {
     id: "industries",
-    keywords: ["industry", "industries", "sector", "sectors", "consulting", "banking", "financial", "government", "defence", "defense", "education", "academic"],
-    answer: "His career spans consulting, financial services and banking, government and regulation, defence, higher education and applied research. That breadth supports a pragmatic enterprise perspective across strategy, risk, technology and operations.",
+    keywords: ["industry", "industries", "sector", "sectors", "consulting", "banking", "financial", "education", "academic"],
+    answer: "His career spans consulting, financial services and banking, enterprise technology, higher education and applied research. That breadth supports a pragmatic enterprise perspective across strategy, risk, technology and operations.",
     links: [{ label: "Explore experience", href: "#experience" }]
   },
   {
     id: "governance",
     keywords: ["governance", "responsible", "risk", "privacy", "security", "assurance", "regulation", "regulated", "nda", "confidential"],
-    answer: "Governance is central to Zohaib’s work. His experience includes Responsible AI, privacy, information governance, data assurance, architecture controls and high-assurance delivery in regulated financial-services, government and defence environments. Confidential client details are deliberately excluded from this assistant.",
+    answer: "Governance is central to Zohaib’s work. His experience includes Responsible AI, privacy, information governance, data assurance, architecture controls and high-assurance delivery in complex enterprise environments. Confidential client details are deliberately excluded from this assistant.",
     links: [{ label: "NDA-safe impact", href: "#impact" }]
   },
   {

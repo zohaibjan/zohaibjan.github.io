@@ -23,6 +23,6 @@ Update professional claims in the page and the assistant's curated knowledge tog
 
 ## Public project provenance
 
-Jetson Edge Vision and FieldWise RAG are newly recreated reference implementations. Project cards link their source, tests and validation limits. They contain no employer/client source or inherited deployment metrics. Broader product case studies link to https://beyondhuman.dev/.
+Jetson Edge Vision and FieldWise RAG are newly recreated reference implementations. Project cards link their source, tests and validation limits. They contain no employer/client source or inherited deployment metrics.
 
 When editing `script.js` or `styles.css`, also change the asset version query in `index.html` so visitors receive refreshed assets. Keep the GitHub Pages build/deployment enabled; it publishes this site.
