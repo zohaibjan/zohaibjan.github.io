@@ -143,7 +143,7 @@ const chatKnowledge = [
   {
     id: "overview",
     keywords: ["who", "about", "overview", "profile", "background", "bio", "biography", "zohaib", "jan"],
-    answer: "Dr. Muhammad Zohaib Jan is a PhD-qualified Senior Manager and AI Architect at EY Australia with more than 15 years of experience across consulting, financial services, enterprise technology, higher education and research. He connects executive priorities with enterprise architecture, governance, capable teams and technically sound delivery.",
+    answer: "Dr. Muhammad Zohaib Jan is a PhD-qualified Senior Manager and AI Architect with more than 15 years of experience across consulting, financial services, enterprise technology, higher education and research. He connects executive priorities with enterprise architecture, governance, capable teams and technically sound delivery.",
     links: [{ label: "Executive profile", href: "#about" }]
   },
   {
@@ -154,8 +154,8 @@ const chatKnowledge = [
   },
   {
     id: "current",
-    keywords: ["current", "now", "ey", "ernst", "young", "consulting", "senior", "manager", "architect", "financial", "bank", "banking"],
-    answer: "Zohaib is currently a Senior Manager and AI Architect at EY Australia. He leads a distributed AI and Data pod supporting a major financial-services transformation, with responsibilities spanning data assurance, information governance, privacy, enterprise architecture and people leadership. Public descriptions are intentionally high-level to respect client confidentiality.",
+    keywords: ["current", "now", "consulting", "senior", "manager", "architect", "financial", "bank", "banking"],
+    answer: "Zohaib is currently a Senior Manager and AI Architect. He leads a distributed AI and Data pod supporting a major financial-services transformation, with responsibilities spanning data assurance, information governance, privacy, enterprise architecture and people leadership. Public descriptions are intentionally high-level to respect client confidentiality.",
     links: [{ label: "Experience", href: "#experience" }]
   },
   {

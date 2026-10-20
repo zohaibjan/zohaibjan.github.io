@@ -1,6 +1,6 @@
 # Dr. Muhammad Zohaib Jan — Executive Leadership Portfolio
 
-Public website for Dr. Muhammad Zohaib Jan, Senior Manager / AI Architect at EY Australia. The page features public engineering projects, research and enterprise leadership experience.
+Public website for Dr. Muhammad Zohaib Jan, Senior Manager / AI Architect. The page features public engineering projects, research and enterprise leadership experience.
 
 The site is a responsive, accessible static experience hosted through GitHub Pages.
 
